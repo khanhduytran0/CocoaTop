@@ -9,6 +9,10 @@
 #import "sys/proc_info.h"
 #import "sys/libproc.h"
 
+#if TARGET_OS_MAC
+int proc_pid_rusage(int pid, int flavor, rusage_info_t *buffer);
+#endif
+
 @implementation PSProc
 
 - (instancetype)initWithKinfo:(struct kinfo_proc *)ki iconSize:(CGFloat)size

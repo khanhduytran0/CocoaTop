@@ -1,5 +1,6 @@
 #import "THtmlViewController.h"
 #import "BackButtonHandler.h"
+#import <WebKit/WebKit.h>
 
 @implementation HtmlViewController
 
@@ -11,11 +12,11 @@
 	self.indicator.color = [UIColor blackColor];
 	self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:self.indicator];
 
-	UIWebView *webView = [[UIWebView alloc] initWithFrame:CGRectZero];
+	WKWebView *webView = [[WKWebView alloc] initWithFrame:CGRectZero];
 	webView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-	webView.dataDetectorTypes = UIDataDetectorTypeNone;
-	webView.scalesPageToFit = YES;
-	webView.delegate = self;
+//	webView.dataDetectorTypes = UIDataDetectorTypeNone;
+//	webView.scalesPageToFit = YES;
+//	webView.delegate = self;
 
 	[webView loadRequest:[[NSURLRequest alloc] initWithURL:self.url]];
 	self.view = webView;
@@ -23,7 +24,7 @@
 
 - (BOOL)navigationShouldPopOnBackButton
 {
-	UIWebView *webView = (UIWebView *)self.view;
+    WKWebView *webView = (WKWebView *)self.view;
 	if (webView.canGoBack) {
 		[webView goBack];
 		return NO;
@@ -31,12 +32,12 @@
 	return YES;
 }
 
-- (void)webViewDidStartLoad:(UIWebView *)webView
+- (void)webViewDidStartLoad:(WKWebView *)webView
 {
 	[self.indicator startAnimating];
 }
 
-- (void)webViewDidFinishLoad:(UIWebView *)webView
+- (void)webViewDidFinishLoad:(WKWebView *)webView
 {
 	[self.indicator stopAnimating];
 }

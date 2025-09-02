@@ -51,7 +51,7 @@
 		AC6A89B2259DCDBA009AC84F /* Proc.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6A8976259DCDBA009AC84F /* Proc.m */; };
 		AC6A89B3259DCDBA009AC84F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6A8979259DCDBA009AC84F /* AppDelegate.m */; };
 		AC6A89B4259DCDBA009AC84F /* SockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6A897B259DCDBA009AC84F /* SockViewController.m */; };
-		AC6A89B8259DDC80009AC84F /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC6A89B5259DCF2C009AC84F /* IOKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		E1988D972E670C9300599E69 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1988D952E670C7A00599E69 /* IOKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -140,9 +140,9 @@
 		AC6A897E259DCDBA009AC84F /* xpc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xpc.h; sourceTree = "<group>"; };
 		AC6A897F259DCDBA009AC84F /* base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = base.h; sourceTree = "<group>"; };
 		AC6A8980259DCDBA009AC84F /* AppIcon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppIcon.h; sourceTree = "<group>"; };
-		AC6A89B5259DCF2C009AC84F /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IOKit.framework; sourceTree = "<group>"; };
 		AC6FC38A25A2A9B0006447F7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AC84F94A25A0DF5F00F468F6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1988D952E670C7A00599E69 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk/System/Library/Frameworks/IOKit.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,7 +150,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC6A89B8259DDC80009AC84F /* IOKit.framework in Frameworks */,
+				E1988D972E670C9300599E69 /* IOKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,7 +160,6 @@
 		AC6A88FA259DCD64009AC84F = {
 			isa = PBXGroup;
 			children = (
-				AC6A89B5259DCF2C009AC84F /* IOKit.framework */,
 				AC6A891F259DCDBA009AC84F /* src */,
 				AC6A8904259DCD64009AC84F /* Products */,
 				AC6A89B7259DDC80009AC84F /* Frameworks */,
@@ -335,6 +334,7 @@
 		AC6A89B7259DDC80009AC84F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E1988D952E670C7A00599E69 /* IOKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -591,14 +591,16 @@
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4BNWD349PE;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = src/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -606,7 +608,11 @@
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.domo.cocoatop64;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTS_MACCATALYST = NO;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = "arm64 armv7 i386 x86_64";
 			};
@@ -618,14 +624,16 @@
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4BNWD349PE;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = src/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -633,7 +641,11 @@
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.domo.cocoatop64;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTS_MACCATALYST = NO;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = "arm64 armv7";
 			};

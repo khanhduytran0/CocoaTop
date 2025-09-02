@@ -7,7 +7,9 @@
 extern kern_return_t task_for_pid(task_port_t task, pid_t pid, task_port_t *target);
 extern kern_return_t task_info(task_port_t task, unsigned int info_num, task_info_t info, unsigned int *info_count);
 extern int proc_pidpath(int pid, void * buffer, uint32_t  buffersize) __OSX_AVAILABLE_STARTING(__MAC_10_5, __IPHONE_2_0);
+#if !TARGET_OS_MAC
 extern int proc_pid_rusage(int pid, int flavor, struct rusage_info_v2 *rusage);// __OSX_AVAILABLE_STARTING(__MAC_10_9, __IPHONE_7_0);
+#endif
 //extern int proc_listpidspath(uint32_t type, uint32_t typeinfo, const char *path, uint32_t pathflags, void *buffer, int buffersize) __OSX_AVAILABLE_STARTING(__MAC_10_5, __IPHONE_2_0);
 //extern int proc_listpids(uint32_t type, uint32_t typeinfo, void *buffer, int buffersize) __OSX_AVAILABLE_STARTING(__MAC_10_5, __IPHONE_2_0);
 //extern int proc_listallpids(void * buffer, int buffersize) __OSX_AVAILABLE_STARTING(__MAC_10_7, __IPHONE_4_1);

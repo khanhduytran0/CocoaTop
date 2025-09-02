@@ -26,6 +26,10 @@
  * @APPLE_OSREFERENCE_LICENSE_HEADER_END@
  */
 
+#if TARGET_OS_MAC
+#include <sys/proc_info.h>
+#endif
+
 #ifndef _SYS_PROC_INFO_H
 #define _SYS_PROC_INFO_H
 

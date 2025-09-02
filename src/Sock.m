@@ -716,7 +716,6 @@ void dump(unsigned char *b, int s)
         });
         
         if (xpc_pipe_routine(xp, xpc_in, &xpc_out) || !xpc_dictionary_get_int64(xpc_out, "error")) {
-            xpc_release(xpc_in);
             xpc_in = nil;
             close(hpipe[1]);
             hpipe[1] = -1;
@@ -751,9 +750,6 @@ void dump(unsigned char *b, int s)
             free(buf);
         }
     }
-	if (xpc_in) xpc_release(xpc_in);
-	if (xpc_out) xpc_release(xpc_out);
-	xpc_release(xp);
     if (hpipe[0] != -1) {
         close(hpipe[0]);
     }
