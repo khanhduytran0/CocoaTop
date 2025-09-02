@@ -34,7 +34,7 @@ struct _os_alloc_once_s {
     void **ptr;
 };
 
-int main(int argc, char *argv[]) {
+int main_ui(int argc, char *argv[]) {
 	@autoreleasepool {
         if (HelperIsRunningInSandbox()) {
             NSBundle *utility = [[NSBundle alloc] initWithPath:@"/Library/Frameworks/CRJailbreakUtilities.framework"];

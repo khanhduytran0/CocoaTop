@@ -7,10 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AC6A8981259DCDBA009AC84F /* GridCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6A8920259DCDBA009AC84F /* GridCell.m */; };
-		AC6A8982259DCDBA009AC84F /* Column.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6A8923259DCDBA009AC84F /* Column.m */; };
-		AC6A8983259DCDBA009AC84F /* NetArray.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6A8924259DCDBA009AC84F /* NetArray.m */; };
-		AC6A8984259DCDBA009AC84F /* SetupColumns.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6A8925259DCDBA009AC84F /* SetupColumns.m */; };
 		AC6A8985259DCDBA009AC84F /* Default-1024h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC6A8927259DCDBA009AC84F /* Default-1024h@2x.png */; };
 		AC6A8986259DCDBA009AC84F /* ios7-chevron@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC6A8928259DCDBA009AC84F /* ios7-chevron@2x.png */; };
 		AC6A8987259DCDBA009AC84F /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = AC6A8929259DCDBA009AC84F /* Icon.png */; };
@@ -37,22 +33,52 @@
 		AC6A899D259DCDBA009AC84F /* Icon-Small-40.png in Resources */ = {isa = PBXBuildFile; fileRef = AC6A8940259DCDBA009AC84F /* Icon-Small-40.png */; };
 		AC6A899F259DCDBA009AC84F /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC6A8942259DCDBA009AC84F /* Icon-Small@2x.png */; };
 		AC6A89A0259DCDBA009AC84F /* UIButtonBarRefresh@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC6A8943259DCDBA009AC84F /* UIButtonBarRefresh@2x.png */; };
-		AC6A89A1259DCDBA009AC84F /* TextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6A8944259DCDBA009AC84F /* TextViewController.m */; };
-		AC6A89A2259DCDBA009AC84F /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6A8946259DCDBA009AC84F /* RootViewController.m */; };
-		AC6A89A3259DCDBA009AC84F /* Compat.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6A8952259DCDBA009AC84F /* Compat.m */; };
-		AC6A89A4259DCDBA009AC84F /* ProcArray.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6A8953259DCDBA009AC84F /* ProcArray.m */; };
-		AC6A89A8259DCDBA009AC84F /* AppIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6A895E259DCDBA009AC84F /* AppIcon.m */; };
-		AC6A89AA259DCDBA009AC84F /* Setup.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6A8960259DCDBA009AC84F /* Setup.m */; };
-		AC6A89AC259DCDBA009AC84F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6A896D259DCDBA009AC84F /* main.m */; };
-		AC6A89AD259DCDBA009AC84F /* PopupMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6A896E259DCDBA009AC84F /* PopupMenuView.m */; };
-		AC6A89AE259DCDBA009AC84F /* Sock.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6A8970259DCDBA009AC84F /* Sock.m */; };
-		AC6A89AF259DCDBA009AC84F /* BackButtonHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6A8971259DCDBA009AC84F /* BackButtonHandler.m */; };
-		AC6A89B0259DCDBA009AC84F /* THtmlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6A8972259DCDBA009AC84F /* THtmlViewController.m */; };
-		AC6A89B2259DCDBA009AC84F /* Proc.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6A8976259DCDBA009AC84F /* Proc.m */; };
-		AC6A89B3259DCDBA009AC84F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6A8979259DCDBA009AC84F /* AppDelegate.m */; };
-		AC6A89B4259DCDBA009AC84F /* SockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6A897B259DCDBA009AC84F /* SockViewController.m */; };
 		E1988D972E670C9300599E69 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1988D952E670C7A00599E69 /* IOKit.framework */; };
+		E1988DB52E67177A00599E69 /* CocoaTopUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E1988DAE2E67177A00599E69 /* CocoaTopUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E1988DBA2E67179100599E69 /* TextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6A8944259DCDBA009AC84F /* TextViewController.m */; };
+		E1988DBB2E67179100599E69 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6A8979259DCDBA009AC84F /* AppDelegate.m */; };
+		E1988DBC2E67179100599E69 /* ProcArray.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6A8953259DCDBA009AC84F /* ProcArray.m */; };
+		E1988DBD2E67179100599E69 /* NetArray.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6A8924259DCDBA009AC84F /* NetArray.m */; };
+		E1988DBE2E67179100599E69 /* Setup.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6A8960259DCDBA009AC84F /* Setup.m */; };
+		E1988DBF2E67179100599E69 /* Sock.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6A8970259DCDBA009AC84F /* Sock.m */; };
+		E1988DC02E67179100599E69 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6A8946259DCDBA009AC84F /* RootViewController.m */; };
+		E1988DC12E67179100599E69 /* GridCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6A8920259DCDBA009AC84F /* GridCell.m */; };
+		E1988DC22E67179100599E69 /* THtmlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6A8972259DCDBA009AC84F /* THtmlViewController.m */; };
+		E1988DC32E67179100599E69 /* BackButtonHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6A8971259DCDBA009AC84F /* BackButtonHandler.m */; };
+		E1988DC42E67179100599E69 /* AppIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6A895E259DCDBA009AC84F /* AppIcon.m */; };
+		E1988DC52E67179100599E69 /* Column.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6A8923259DCDBA009AC84F /* Column.m */; };
+		E1988DC62E67179100599E69 /* Compat.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6A8952259DCDBA009AC84F /* Compat.m */; };
+		E1988DC72E67179100599E69 /* Proc.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6A8976259DCDBA009AC84F /* Proc.m */; };
+		E1988DC82E67179100599E69 /* SockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6A897B259DCDBA009AC84F /* SockViewController.m */; };
+		E1988DC92E67179100599E69 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6A896D259DCDBA009AC84F /* main.m */; };
+		E1988DCA2E67179100599E69 /* PopupMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6A896E259DCDBA009AC84F /* PopupMenuView.m */; };
+		E1988DCB2E67179100599E69 /* SetupColumns.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6A8925259DCDBA009AC84F /* SetupColumns.m */; };
+		E1988DCF2E67185F00599E69 /* main_shim.m in Sources */ = {isa = PBXBuildFile; fileRef = E1988DCC2E6717C300599E69 /* main_shim.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E1988DB22E67177A00599E69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC6A88FB259DCD64009AC84F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E1988DAD2E67177A00599E69;
+			remoteInfo = CocoaTopUI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E1988DA82E67174300599E69 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E1988DB52E67177A00599E69 /* CocoaTopUI.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		AC6A8903259DCD64009AC84F /* CocoaTop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocoaTop.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -143,6 +169,8 @@
 		AC6FC38A25A2A9B0006447F7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AC84F94A25A0DF5F00F468F6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1988D952E670C7A00599E69 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk/System/Library/Frameworks/IOKit.framework; sourceTree = DEVELOPER_DIR; };
+		E1988DAE2E67177A00599E69 /* CocoaTopUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CocoaTopUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1988DCC2E6717C300599E69 /* main_shim.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main_shim.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +179,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1988D972E670C9300599E69 /* IOKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1988DAB2E67177A00599E69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,6 +205,7 @@
 			isa = PBXGroup;
 			children = (
 				AC6A8903259DCD64009AC84F /* CocoaTop.app */,
+				E1988DAE2E67177A00599E69 /* CocoaTopUI.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -226,6 +262,7 @@
 				AC6A897C259DCDBA009AC84F /* Column_pre_ios7.h */,
 				AC6A897D259DCDBA009AC84F /* xpc */,
 				AC6A8980259DCDBA009AC84F /* AppIcon.h */,
+				E1988DCC2E6717C300599E69 /* main_shim.m */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -349,6 +386,16 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		E1988DA92E67177A00599E69 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		AC6A8902259DCD64009AC84F /* CocoaTop */ = {
 			isa = PBXNativeTarget;
@@ -357,15 +404,37 @@
 				AC6A88FF259DCD64009AC84F /* Sources */,
 				AC6A8900259DCD64009AC84F /* Frameworks */,
 				AC6A8901259DCD64009AC84F /* Resources */,
+				E1988DA82E67174300599E69 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E1988DB32E67177A00599E69 /* PBXTargetDependency */,
 			);
 			name = CocoaTop;
 			productName = CocoaTop;
 			productReference = AC6A8903259DCD64009AC84F /* CocoaTop.app */;
 			productType = "com.apple.product-type.application";
+		};
+		E1988DAD2E67177A00599E69 /* CocoaTopUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1988DB62E67177A00599E69 /* Build configuration list for PBXNativeTarget "CocoaTopUI" */;
+			buildPhases = (
+				E1988DA92E67177A00599E69 /* Headers */,
+				E1988DAA2E67177A00599E69 /* Sources */,
+				E1988DAB2E67177A00599E69 /* Frameworks */,
+				E1988DAC2E67177A00599E69 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CocoaTopUI;
+			packageProductDependencies = (
+			);
+			productName = CocoaTopUI;
+			productReference = E1988DAE2E67177A00599E69 /* CocoaTopUI.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -373,11 +442,15 @@
 		AC6A88FB259DCD64009AC84F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1640;
 				LastUpgradeCheck = 1170;
 				ORGANIZATIONNAME = SXX;
 				TargetAttributes = {
 					AC6A8902259DCD64009AC84F = {
 						CreatedOnToolsVersion = 11.7;
+					};
+					E1988DAD2E67177A00599E69 = {
+						CreatedOnToolsVersion = 16.4;
 					};
 				};
 			};
@@ -395,6 +468,7 @@
 			projectRoot = "";
 			targets = (
 				AC6A8902259DCD64009AC84F /* CocoaTop */,
+				E1988DAD2E67177A00599E69 /* CocoaTopUI */,
 			);
 		};
 /* End PBXProject section */
@@ -433,6 +507,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E1988DAC2E67177A00599E69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -440,28 +521,44 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC6A89A1259DCDBA009AC84F /* TextViewController.m in Sources */,
-				AC6A89B3259DCDBA009AC84F /* AppDelegate.m in Sources */,
-				AC6A89A4259DCDBA009AC84F /* ProcArray.m in Sources */,
-				AC6A8983259DCDBA009AC84F /* NetArray.m in Sources */,
-				AC6A89AA259DCDBA009AC84F /* Setup.m in Sources */,
-				AC6A89AE259DCDBA009AC84F /* Sock.m in Sources */,
-				AC6A89A2259DCDBA009AC84F /* RootViewController.m in Sources */,
-				AC6A8981259DCDBA009AC84F /* GridCell.m in Sources */,
-				AC6A89B0259DCDBA009AC84F /* THtmlViewController.m in Sources */,
-				AC6A89AF259DCDBA009AC84F /* BackButtonHandler.m in Sources */,
-				AC6A89A8259DCDBA009AC84F /* AppIcon.m in Sources */,
-				AC6A8982259DCDBA009AC84F /* Column.m in Sources */,
-				AC6A89A3259DCDBA009AC84F /* Compat.m in Sources */,
-				AC6A89B2259DCDBA009AC84F /* Proc.m in Sources */,
-				AC6A89B4259DCDBA009AC84F /* SockViewController.m in Sources */,
-				AC6A89AC259DCDBA009AC84F /* main.m in Sources */,
-				AC6A89AD259DCDBA009AC84F /* PopupMenuView.m in Sources */,
-				AC6A8984259DCDBA009AC84F /* SetupColumns.m in Sources */,
+				E1988DCF2E67185F00599E69 /* main_shim.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1988DAA2E67177A00599E69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1988DBA2E67179100599E69 /* TextViewController.m in Sources */,
+				E1988DBB2E67179100599E69 /* AppDelegate.m in Sources */,
+				E1988DBC2E67179100599E69 /* ProcArray.m in Sources */,
+				E1988DBD2E67179100599E69 /* NetArray.m in Sources */,
+				E1988DBE2E67179100599E69 /* Setup.m in Sources */,
+				E1988DBF2E67179100599E69 /* Sock.m in Sources */,
+				E1988DC02E67179100599E69 /* RootViewController.m in Sources */,
+				E1988DC12E67179100599E69 /* GridCell.m in Sources */,
+				E1988DC22E67179100599E69 /* THtmlViewController.m in Sources */,
+				E1988DC32E67179100599E69 /* BackButtonHandler.m in Sources */,
+				E1988DC42E67179100599E69 /* AppIcon.m in Sources */,
+				E1988DC52E67179100599E69 /* Column.m in Sources */,
+				E1988DC62E67179100599E69 /* Compat.m in Sources */,
+				E1988DC72E67179100599E69 /* Proc.m in Sources */,
+				E1988DC82E67179100599E69 /* SockViewController.m in Sources */,
+				E1988DC92E67179100599E69 /* main.m in Sources */,
+				E1988DCA2E67179100599E69 /* PopupMenuView.m in Sources */,
+				E1988DCB2E67179100599E69 /* SetupColumns.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E1988DB32E67177A00599E69 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E1988DAD2E67177A00599E69 /* CocoaTopUI */;
+			targetProxy = E1988DB22E67177A00599E69 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		AC6A8935259DCDBA009AC84F /* LaunchScreen.storyboardc */ = {
@@ -525,7 +622,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -577,7 +674,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -651,6 +748,113 @@
 			};
 			name = Release;
 		};
+		E1988DB72E67177A00599E69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2025 SXX. All rights reserved.";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.domo.cocoatop64.CocoaTopUI;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_MODULE = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				XROS_DEPLOYMENT_TARGET = 2.5;
+			};
+			name = Debug;
+		};
+		E1988DB82E67177A00599E69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2025 SXX. All rights reserved.";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.domo.cocoatop64.CocoaTopUI;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_MODULE = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				XROS_DEPLOYMENT_TARGET = 2.5;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -668,6 +872,15 @@
 			buildConfigurations = (
 				AC6A891D259DCD64009AC84F /* Debug */,
 				AC6A891E259DCD64009AC84F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1988DB62E67177A00599E69 /* Build configuration list for PBXNativeTarget "CocoaTopUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1988DB72E67177A00599E69 /* Debug */,
+				E1988DB82E67177A00599E69 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
